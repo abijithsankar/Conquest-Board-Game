@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.*;
 import java.util.Map;
 
-public class homework {
+public class GameMain {
 	static List<Node> nodes = new ArrayList<Node>();
 	static List<Character> stateList = new ArrayList<Character>();
 
@@ -146,8 +146,6 @@ public class homework {
 			String previous = null;
 			while(pruneItr.hasNext()){
 				Node child=pruneItr.next();
-				//System.out.println("childScore:"+AlphaBeta.pruneStateMap.get(child));
-				//System.out.println("childstate:"+child.state);
 				if(AlphaBeta.pruneStateMap.get(child)==pruningScore){
 					if(pruneFlag!=1){
 						int pruneCounter=0;
